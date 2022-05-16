@@ -1,0 +1,18 @@
+#############################################################################################
+##### Expose your port publicly here so other people or services can use it.            #####
+#####                                                                                   #####     
+##### ex. You want to connect a frontend to a backend. Run the project you want to      #####
+##### expose and add its port here. This service can be accessed at                     #####
+##### 3000-projectName-user-org.brev.sh.                                                #####     
+#####                                                                                   #####     
+##### Read more here: https://github.com/brevdev/dotbrev/blob/main/README.md            #####     
+#############################################################################################
+
+#  If you want others to interact with this machine
+#  you can give them a url with the port number prepended
+
+version: "1.0"
+ports:
+  - "3000" # for your react project (to show others)
+  - "27017" # for your MongoDB database (if you want others to interact with it)
+  - "8080" # for your express server (to give to others, perhaps for testing)
